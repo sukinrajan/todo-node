@@ -20,6 +20,15 @@ function updateTodo(id, newTodoItem) {
     todoList.length = 0;
   }
 
+  function findTodoById(id) {
+    return todoList.find((item) => item.id === id);
+}
+
+function filterTodoByCompletedFalse() {
+    return todoList.filter((item) => !item.completed);
+}
+
+
 const todo1 = {
     id: 1,
     task: "todo",
@@ -51,6 +60,13 @@ console.log(todoList)
 updateTodo(1,todo2)
 console.log("After update: ")
 console.log(todoList)
+
+console.log("After Filer by coompleted false: ")
+console.log(filterTodoByCompletedFalse())
+
+findTodoById(2);
+console.log("After Find: ")
+console.log(findTodoById(2))
 
 clearAll();
 console.log("After clear: ")
