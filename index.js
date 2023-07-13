@@ -1,13 +1,13 @@
 const TodoList = require('./TodoList');
-class Todo extends TodoList{
+// class Todo extends TodoList{
 
-    constructor() {
-        super();
-      }
-    }
+//     constructor() {
+//         super();
+//       }
+//     }
 
-    const todoObj1 = new Todo();
-    const todoObj2 = new Todo();
+    const todoObj1 = new TodoList();
+    const todoObj2 = new TodoList();
     
     const todo1 = {
         id: 1,
@@ -33,6 +33,9 @@ class Todo extends TodoList{
     
     todoObj2.addTodo(todo3)
     todoObj2.addTodo(todo2)
+
+    console.log("After getAll Function: ")
+    console.log(todoObj1.getAllTodoList())
     
     console.log("After Add in first obj: ")
     console.log(todoObj1)

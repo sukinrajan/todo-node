@@ -35,5 +35,9 @@ class TodoList {
         this.todoList.sort((a, b) => a.id - b.id);
     }
 
+    getAllTodoList(){
+        return this.todoList
+    }
+
 }
     module.exports = TodoList;
