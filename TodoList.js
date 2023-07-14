@@ -1,5 +1,3 @@
-const todoList = require("./store.js")
-
 class TodoList { 
     constructor() {
         this.todoList = [];
